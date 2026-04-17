@@ -8,15 +8,22 @@
 
     <style>
         body{
+            background: linear-gradient( -45deg,white, rgb(216, 116, 191), rgba(53, 53, 53, 0.603));
+            background-size: 300% 300%;
+            animation: gradientBG 15s ease infinite;
             margin: 0;
             height: 100vh;
             display: flex;
-            background: rgb(255, 215, 234);
             justify-content: center;
             align-items: center;
-            background: rosybrown;
             font-family:Verdana, Geneva, Tahoma, sans-serif; 
-            color: aliceblue;  
+            color: aliceblue; 
+
+        }
+        @keyframes gradientBG{
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
         }
         .card{
             background: rgb(212, 117, 117);
@@ -58,8 +65,8 @@
         }
         .btn{
             color: black;
-            text-decoration: none;
             text-align: center;
+            text-decoration: none;
             background-color: aliceblue;
             padding: 10px 18px;
             border-radius: 6px;
@@ -71,7 +78,7 @@
         }
         .btn:hover{
             opacity: 0.8;
-            background: rgb(93, 75, 172);
+            background: rgb(223, 146, 223);
 
         }
         .skills{
@@ -93,11 +100,9 @@
             border-radius: 4px;
         }
         .social-media{
-            margin-top: 20px;
-            display: flex;
-            justify-content:center;
-            gap: 15px;
+            color: aliceblue;
             font-size: 20px;
+            transition: 0.3s;
         }
         .social-media i{
             cursor: pointer;
@@ -106,6 +111,14 @@
         .social-media i:hover{
             color: rgb(172, 126, 141);
             transform: scale(1.2);
+        }
+        .social-media a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .social-media a:hover{
+            color: blue;
+            transform: scale(1,2); 
         }
     </style>
 </head>
@@ -118,8 +131,9 @@
         <div class="job">Estágio/Estudante<br>Serviço Social/Técnico de Informatica</div><br>
 
         <div class="botões">
-            <a href="#" class="btn primario"Mensagem>
-            <button class="secundario">Follow</button>
+           <a href="https://wa.me/5538998059672" class="btn primario">Mensagem</a>
+           <a href="#" class="btn secundario">Follow</a>
+           
         </div>
         <div class="skills">
             <h3>Habilidades</h3>
@@ -135,10 +149,10 @@
         </div>
         </div>
         <div class="social-media">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-github"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-instagram"></i>
+           <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+           <a href="https://github.com/dashboard" target="_blank"><i class="fab fa-github"></i></a>
+           <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+           <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
     </div>
     
